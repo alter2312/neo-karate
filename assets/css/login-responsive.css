@@ -1,0 +1,17 @@
+@media (max-width:768px){
+  
+    .container {
+     overflow: auto;
+    }
+    
+    form {
+      width: 90vw;
+      height: 90vh;
+      max-width: 30rem;
+      min-width:370px;
+    
+    }
+    .error{
+    font-size: .8rem;
+    }
+}

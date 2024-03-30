@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body{
+    background-image: url(../img/fondo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+form{
+    background-color: #ffffff23;
+}
+.font-montserrat{
+    font-family: 'Montserrat', 'sans-serif';
+}
+
+.font-bricolage{
+    font-family: 'Bricolage Grotesque', 'sans-serif';
+}
+
+.font-poppins{
+    font-family: 'Poppins', 'sans-serif';
+}
+
+input{
+    font-family: 'Bricolage Grotesque';
+} 
+
+input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.custom-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.custom-button {
+    font-size: 60px;
+    cursor: pointer;
+    margin-right: 10%;
+}
+
+.sumar{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 10px;
+}
+
+.restar{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0 10px;
+}

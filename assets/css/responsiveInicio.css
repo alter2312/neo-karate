@@ -1,0 +1,68 @@
+@media (max-width:768px){
+    @import "normalize.css";
+
+.container::before{
+  content: "";
+  display: none;
+
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    gap:3rem
+
+}
+.slider{
+  width: 90%;
+min-width: 20rem;
+  height: 70%;
+  min-height: 25rem;
+  position:relative;
+  top:3rem;
+
+
+}
+
+.container-img{
+width: 500%;
+height: 100%;
+display: flex;
+justify-content:start;
+align-items: center;
+position:relative;
+animation: infinite 10s slider;
+
+
+
+}
+
+
+
+.container-text{
+width: 70%;
+position: relative;
+top:2rem;
+
+}
+
+.title-text{
+font-size: 3rem;
+
+
+}
+.title-text span{
+color:var(--main-color)
+}
+.description-text{
+font-size: 1rem;
+letter-spacing: 1px;
+
+}
+.nombre-empresa{
+  color: var(--main-color);
+  font-size: 1rem;
+  display: inline;
+  text-transform: uppercase;
+  
+}
+}

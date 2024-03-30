@@ -1,0 +1,220 @@
+@import "normalize.css";
+@media (max-width:768px){
+
+
+    section {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-evenly;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    
+    .fondo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    
+    
+    
+    
+    .presentacion {
+        
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .fondo {
+        width: 100vw;
+        height: 100vh;
+        background-color: #000;
+        display: flex;
+        position: absolute;
+        opacity: 20%;
+    }
+    
+    .title {
+        font-size: 5rem;
+        position: relative;
+        z-index: 10;
+        color: #fff;
+    }
+    
+    
+    .nombre_user {
+        font-size: 2rem;
+        position: absolute;
+        top: 57%;
+        color: #fff;
+    }
+    
+    .btn-torneo {
+        font-size: 1.5rem;
+        position: absolute;
+        top: 65%;
+        color: var(--main-color);
+    }
+    
+    .LinkJuez {
+        font-weight: 900;
+        overflow: hidden;
+        position: absolute;
+        color: #fff;
+    }
+    
+    .LinkJuez::before {
+        content: "";
+        width: 0%;
+        height: 3px;
+        position: absolute;
+        background-color: var(--secund-color);
+        top: 90%;
+    }
+    
+    .LinkJuez::after {
+        content: "";
+        width: 100%;
+        height: 4px;
+        position: absolute;
+        background-color: var(--secund-color);
+        transform: rotate(180deg);
+        top: 3%;
+    }
+    
+    .LinkJuez:hover::after {
+        animation: .4s bar;
+        animation-fill-mode: forwards;
+    }
+    
+    .LinkJuez:hover::before {
+        width: 100%;
+        transition: .4s;
+    }
+    
+    .LinkJuez:hover {
+        color: #f1f1f1;
+        transition: 1s;
+    }
+    
+    @keyframes bar {
+        0% {
+            left: 100%;
+        }
+    
+        50% {
+            left: 50%;
+        }
+    
+        100% {
+            left: 0;
+        }
+    }
+    
+    .btn-arrow {
+        width: 5rem;
+        height: 5rem;
+        position: absolute;
+        top:75%;
+    }
+    
+    .btn-arrow img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        animation: infinite 1.2s arrow;
+        position: absolute;
+        top: -40%;
+    }
+    
+    .title span {
+        color: #321BA6;
+    
+    }
+    
+    #session1 {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--secund-bg-color);
+    }
+    
+    #session2 {
+        background-color:var(--dark-color)
+        ;
+        display: flex;
+        flex-direction: column-reverse;
+        ;
+    }
+    
+    
+    
+    .container-text {
+        width: 85%;
+        max-width: 800px;
+        position: relative;
+        top:0rem;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        font-size: 1.4rem;
+        gap: 2rem;
+    }
+    
+    .parrafo {
+        width: 100%;
+        font-size: 1.2rem;
+    }
+    
+    .container-text p {
+        width: 90%;
+    }
+    
+    .nombre-app {
+        font-size: 2rem;
+        width: auto;
+        height: auto;
+    }
+    
+    
+    .container-img {
+        
+        height: 50vh;
+        min-width: 40vw;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+        position:relative;
+        left:0rem;
+    }
+    .container-img2{
+        left:0rem;
+    }
+    
+    
+    .container-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+        border-radius: 100%;
+    
+    }
+    
+    @keyframes arrow{
+        0%{top:-40%;}
+        50%{top:-20%;}
+        100%{top:-40%;}
+      }
+}

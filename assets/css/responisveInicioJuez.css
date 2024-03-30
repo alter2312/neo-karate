@@ -1,0 +1,220 @@
+@import "normalize.css";
+@media (max-width:768px){
+
+
+main{
+   width: 100%;
+   height: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: column nowrap;
+
+}
+
+
+section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    gap:0;
+}
+
+
+.title{
+    font-size: 5rem;
+    /* font-family: "Monogram"; */
+    position:relative;
+    z-index: 10;
+    
+}
+.nombre_user{
+  font-size: 2rem;
+  position: absolute;
+  top:55%;
+}
+.puntuar{
+  font-size: 1.4rem;
+  position: absolute;
+  top:62%;
+  color:var(--main-color);
+ 
+}
+
+
+.btn-arrow{
+    width: 3rem;
+    height: 3rem;
+    position: relative;
+    top:2rem
+}
+
+.slider{
+    width: 90%;
+    max-width: 50em;
+    height: 60vh;
+    min-height: 20rem;
+    background-color: aliceblue;
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    position:relative;
+    border-radius: 2rem;
+    top:0;
+    margin-top:4rem
+  
+}
+.container-text{
+    width: 80%;
+    height: 50%;
+    position: relative;
+    top:2rem;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    text-align: left;
+    padding: 0;
+    font-size: 1.2rem;
+    gap:1rem;
+    margin:2rem;
+}
+.parrafo{
+    width: 100%;
+    font-size: 1rem;
+}
+.container-text p{
+width: 90%;
+
+
+}
+#session2{
+    display: flex;
+    flex-direction: column-reverse;
+}
+  .nombre-app{
+    font-size: 2rem;
+    width: auto;
+    height: auto;
+  
+  }
+
+
+
+}
+
+@media (min-width:769px) and (max-width:930px){
+    
+main{
+   width: 100%;
+   height: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: column nowrap;
+
+}
+
+
+section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    gap:0;
+}
+
+
+.title{
+    font-size: 7rem;
+    /* font-family: "Monogram"; */
+    position:relative;
+    z-index: 10;
+    
+}
+.nombre_user{
+  font-size: 2rem;
+  position: absolute;
+  top:55%;
+}
+.puntuar{
+  font-size: 1.4rem;
+  position: absolute;
+  top:62%;
+  color:var(--main-color);
+ 
+}
+
+
+.btn-arrow{
+    width: 3rem;
+    height: 3rem;
+    position: relative;
+    top:2rem
+}
+
+.slider{
+    width: 90%;
+    max-width: 50em;
+    height: 60vh;
+    min-height: 20rem;
+    background-color: aliceblue;
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    position:relative;
+    border-radius: 2rem;
+    top:0;
+    margin-top:4rem
+  
+}
+.container-text{
+    width: 80%;
+    height: 50%;
+    position: relative;
+    top:2rem;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    text-align: left;
+    padding: 0;
+    font-size: 1.2rem;
+    gap:1rem;
+    margin:2rem;
+}
+.parrafo{
+    width: 100%;
+    font-size: 1rem;
+}
+.container-text p{
+width: 90%;
+
+
+}
+#session2{
+    display: flex;
+    flex-direction: column-reverse;
+}
+  .nombre-app{
+    font-size: 2rem;
+    width: auto;
+    height: auto;
+  
+  }
+
+
+}

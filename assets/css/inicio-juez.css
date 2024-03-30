@@ -1,0 +1,264 @@
+@import "normalize.css";
+
+main{
+    width: 100vw;
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: column nowrap;
+
+}
+
+
+section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+.presentacion{
+    width: 100vw;
+    min-height: 100vh;
+    background-image: url("../img/imagenes_pantalla_juez/GIF.gif");
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip:content-box;
+    position:relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.fondo{
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    display: flex;
+    filter:opacity(70%);
+    position: absolute;
+}
+.title{
+    font-size: 10rem;
+    /* font-family: "Monogram"; */
+    position:relative;
+    z-index: 10;
+    
+}
+.nombre_user{
+  font-size: 3rem;
+  position: absolute;
+  top:55%;
+}
+.puntuar{
+  font-size: 2rem;
+  position: absolute;
+  top:65%;
+  color:var(--main-color);
+  overflow: hidden;
+ 
+}
+.linkJuez{
+  font-weight: 900;
+  overflow: hidden;
+  position: absolute;
+}
+.LinkJuez::before{
+  content: "";
+  width: 0%;
+  height: 3px;
+  position: absolute;
+  background-color: var(--secund-color);
+  top:90%;
+}
+.LinkJuez::after{
+  content: "";
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  background-color: var(--secund-color);
+  transform:rotate(180deg) ;
+  top:3%;
+}
+.LinkJuez:hover::after{
+  animation:.4s bar;
+  animation-fill-mode: forwards;
+}
+.LinkJuez:hover::before{
+  width: 100%;
+  transition: .4s;
+}
+.LinkJuez:hover{
+  color:#f1f1f1;
+  transition: 1s;
+}
+@keyframes bar{
+  
+  0%{left:100%;
+  }
+  50%{left: 50%;}
+  100%{left: 0;}
+}
+
+.btn-arrow{
+    width: 5rem;
+    height: 5rem;
+    position: relative;
+}
+.btn-arrow img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+animation: infinite 1.2s arrow;
+position:absolute;
+top:-40%;
+}
+.title span{
+    color:var(--main-color)
+}
+#session1{
+    background-color: var(--dark-color);
+}
+#session2{
+    background-color:var(--main-bg-color);
+}
+.slider{
+    width: 50%;
+    max-width: 50em;
+    height: 60vh;
+    background-color: aliceblue;
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    position:relative;
+    border-radius: 2rem;
+    top:5rem;
+  
+}
+.container-text{
+    width: 30%;
+    height: 50%;
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    text-align: left;
+    padding: 0;
+    font-size: 1.4rem;
+    gap:2rem
+}
+.parrafo{
+    width: 100%;
+    font-size: 1.2rem;
+}
+.container-text p{
+width: 90%;
+
+
+}
+  .nombre-app{
+    font-size: 3rem;
+    width: auto;
+    height: auto;
+  
+  }
+h2 a span:hover{
+ background-color: var(--main-color);
+ box-shadow: 0 0 5px var(--secund-color),
+ 0 0 25px var(--secund-color),
+ 0 0 50px var(--secund-color),
+ 0 0 100px var(--secund-color);
+ color: #f1f1f1;
+ transition: .5s;
+
+}
+  h2 span{
+    color:var(--main-color);
+    padding: 0 1rem;
+    border-radius: 1rem;
+    
+
+
+  }
+  .container-img{
+  width: 400%;
+  height: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content:center;
+  align-items: center;
+  position:absolute;
+  animation: infinite 10s slider;
+  
+  
+  
+  
+  }
+  .container-img2{
+    animation:infinite 10s slider2;
+  }
+  .item{
+  width:calc(100% /4);
+  height: 100%;
+object-fit: fill;  
+  }
+
+  @keyframes slider{
+
+    0%{right :-300%}
+    10%{right :-300%}
+  
+    20%{right :-200%}
+    40%{right :-200%}
+    
+    50%{right :-100%}
+    70%{right :-100%}
+    
+    80%{right :0%}
+    90%{right :0%}
+  
+  
+   
+   
+    100%{right :-300%;}
+   
+  
+    
+  }
+  
+  @keyframes slider2{
+
+    0%{left :-300%}
+    10%{left :-300%}
+  
+    20%{left :-200%}
+    40%{left :-200%}
+    
+    50%{left :-100%}
+    70%{left :-100%}
+    
+    80%{left :0%}
+    90%{left :0%}
+  
+  
+   
+   
+    100%{left :-300%;}
+   
+  
+    
+  }
+  @keyframes arrow{
+    0%{top:-40%;}
+    50%{top:-20%;}
+    100%{top:-40%;}
+  }

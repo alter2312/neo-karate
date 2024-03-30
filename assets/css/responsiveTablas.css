@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Montserrat:wght@600&family=Poppins:wght@600&display=swap');
+@import "normalize.css";
+@media (max-width:768px){
+  
+
+
+
+
+
+.container{
+    max-width: 768px;
+};
+
+
+.container{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+ .container h1 {
+      font-size: 1.4rem;
+
+
+}
+.btn .btn-primary{
+    position:absolute;
+    top:2rem;
+}
+*{
+    box-sizing: border-box;
+}
+
+
+
+/* TABLE STYLE`*/ 
+
+.table-responsive{
+    width: 90%;
+    min-width: 700px;
+    max-width: 768x;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: scroll;
+    position: relative;
+    margin-left: 5rem;
+    
+}
+.tabla-grande{
+    position:relative;
+    left: -3rem;
+    justify-content: baseline;
+
+}
+
+table{
+    width: 40%;
+    max-width: 767px;
+    overflow: scroll; 
+}
+tr,
+th,
+td {
+
+  width: 1rem;
+  height: 1rem;
+
+ 
+  
+}
+td{
+  padding: .3rem;
+}
+thead {
+height: 1rem;
+max-width: 767px;
+
+ width: 100%;
+
+  font-size: .7rem;
+  padding:.4rem 1.1rem
+}
+
+tbody {
+
+  font-size:.8rem;
+  max-width: 767px;
+width: 23rem;
+  width: 100%; 
+}
+ 
+/* styles botones */
+
+
+
+.container  .btn {
+  background-color: var(--dark-color);
+  padding:.7rem .4rem;
+  font-size: .5rem;
+  border: 2px solid var(--main-bg-color-light);
+
+  
+  width: auto;
+  max-height: 1rem;
+  
+
+
+  
+}
+
+
+
+
+.container .btn .text {
+  position: relative;
+  z-index: 2;
+}
+
+.dataTables_filter label{
+  
+  font-size: .9rem;
+  width: 4rem;
+  
+
+}
+.form-control{
+  width: 40%;
+  height: 2rem;
+  border-radius: 10rem;
+  margin-bottom:1rem;
+  padding:1rem;
+  border: 1px solid #321ba6;
+  font-size: 2.7rem;
+  font-weight: 900;
+  position:relative;
+
+
+
+}
+.dataTables_filter{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 3rem;
+  
+}
+.dataTables_filter label{
+  min-width:3rem;
+}
+.form-control, .form-control-sm{
+  position:absolute;
+  position:relative;
+  left:10rem;
+  display: flex;
+}
+
+}
+.dataTables_filter label{
+    min-width:40rem;
+    position: absolute;
+    left: -5%;
+  }
+
+
+@media (min-width:769px) and (max-width:900px){
+  
+
+
+
+
+
+.container{
+    max-width: 1279px;
+    min-width: 769px;
+};
+
+
+.container{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+ .container h1 {
+      font-size: 1.4rem;
+
+
+}
+.btn .btn-primary{
+    position:absolute;
+    top:2rem;
+}
+*{
+    box-sizing: border-box;
+}
+
+
+
+/* TABLE STYLE`*/ 
+
+.table-responsive{
+    width: 90%;
+    min-width: 700px;
+    max-width: 768x;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: scroll;
+    position: relative;
+    margin-left: 5rem;
+    
+}
+.tabla-grande{
+    position:relative;
+    left: -3rem;
+    justify-content: baseline;
+
+}
+
+table{
+    width: 40%;
+    max-width: 767px;
+    overflow: scroll; 
+}
+tr,
+th,
+td {
+
+  width: 1rem;
+  height: 1rem;
+
+ 
+  
+}
+td{
+  padding: .3rem;
+}
+thead {
+height: 1rem;
+max-width: 767px;
+
+ width: 100%;
+
+  font-size: .7rem;
+  padding:.4rem 1.1rem
+}
+
+tbody {
+
+  font-size:.8rem;
+  max-width: 767px;
+width: 23rem;
+  width: 100%; 
+}
+ 
+/* styles botones */
+
+
+
+.container  .btn {
+  background-color: var(--dark-color);
+  padding:.7rem .4rem;
+  font-size: .5rem;
+  border: 2px solid var(--main-bg-color-light);
+
+  
+  width: auto;
+  max-height: 1rem;
+  
+
+
+  
+}
+
+
+
+
+.container .btn .text {
+  position: relative;
+  z-index: 2;
+}
+
+.dataTables_filter label{
+  
+  font-size: .9rem;
+  width: 4rem;
+  
+
+}
+.form-control{
+  width: 40%;
+  height: 2rem;
+  border-radius: 10rem;
+  margin-bottom:1rem;
+  padding:1rem;
+  border: 1px solid #321ba6;
+  font-size: .7srem;
+  font-weight: 900;
+
+}
+.dataTables_filter{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 3rem;
+  
+}
+.dataTables_filter label{
+  min-width:50rem;
+  position: absolute;
+  left: -5%;
+}
+label{
+    width: 4rem;
+    max-width: 4rem;
+}
+.col-md-6{
+    max-width: 200px;
+}
+.row{
+    max-width: 2rems;
+}
+
+}

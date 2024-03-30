@@ -1,0 +1,118 @@
+@import "normalize.css";
+main{
+  display: flex;
+  justify-content: space-evenly;
+  align-items:center;
+  padding-bottom: 10rem;
+  flex-flow: row nowrap;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--dark-color);
+  position:relative;
+  
+
+}
+.container::before{
+  content: "";
+  width: 45vw;
+  height: 50vh;
+  border-radius: 0 100% 100% 0;
+  position:absolute;
+  top:-40%;
+  left: -30%;
+  background-color: var(--main-color);
+  box-shadow:  0 200005px var(--main-color),
+  0 0 2520000px var(--main-color),
+  0 0 5200000px var(--main-color),
+  0 0 20000px var(--main-color);
+  backdrop-filter: blur(100px);
+
+}
+.slider{
+  width: 40%;
+  max-width: 50em;
+  height: 70%;
+  background-color: aliceblue;
+  display: flex;
+  justify-content:start;
+  align-items: center;
+  flex-direction: column;
+  gap:3rem;
+  overflow: hidden;
+  position:relative;
+  top:-1rem;
+  box-shadow:  0 5px var(--main-color),
+  0 0 25px var(--main-color),
+  0 0 50px var(--main-color),
+  0 0 100px var(--main-color);
+  border-radius: 2rem;
+
+}
+
+.container-img{
+width: 500%;
+height: 100%;
+display: flex;
+justify-content:start;
+align-items: center;
+position:relative;
+animation: infinite 10s slider;
+
+
+
+}
+.item{
+width: calc(100%/5);
+height: 100%;
+object-fit: cover;
+
+}
+
+
+
+.container-text{
+width: 30%;
+}
+
+.title-text{
+font-size: 3rem;
+
+
+}
+.title-text span{
+color:var(--main-color)
+}
+.description-text{
+font-size: 1.1rem;
+letter-spacing: 1px;
+
+}
+.nombre-empresa{
+  color: var(--main-color);
+  font-size: 1.1rem;
+  display: inline;
+  text-transform: uppercase;
+  
+}
+
+@keyframes slider{
+
+  0%{right :-200%}
+  10%{right :-200%}
+
+  20%{right :-100%}
+  30%{right :-100%}
+  40%{right :0%}
+  50%{right :0%}
+
+
+  60%{right :100%;} 
+  70%{right :100%;}
+ 
+  80%{right :200%;}
+  90%{right:200%;}
+  100%{right :-200%;}
+ 
+
+  
+}
